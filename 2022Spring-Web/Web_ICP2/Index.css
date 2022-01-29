@@ -1,0 +1,27 @@
+.Page_Heading {
+    background-color: rgb(61, 61, 219);
+    text-align: center;
+    padding: 20px;
+}
+
+span.word {
+    color: white;
+}
+
+.Heading {
+    font: 50px Copperplate;
+}
+
+img {
+    float: right;
+    width: 500px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex > div {
+    padding: 20px;
+    font-size: 25px;
+  }
