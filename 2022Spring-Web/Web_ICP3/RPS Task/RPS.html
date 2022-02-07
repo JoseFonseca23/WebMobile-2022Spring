@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is a simple game of rock paper scissors, it uses bootstrap to help tidy up the look of the page, and also css to help style. -->
+<!-- The main purpose of this website is to show the potential of using javascript on a webpage. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="Images/RPS.png">
+    <link rel="stylesheet" href="RPS.css">
+</head>
+
+<!-- The code uses bootstrap's container and rows to help with presentation.-->
+<body>
+    <div class="container">
+        <!-- This first row just holds the computer's square that will have an empty image which will be updated depending on what hand it uses.-->
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-4 outcome">
+                <div class="comp"><img id="computer" src="" style="width:80px"></div>
+            </div>
+        </div>
+        <!-- This row is a result screen that will have text outputed to.-->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-4 game">
+                <div class="screen">
+                    <p id="results">Start</p>
+                </div>
+                <!-- The options will also be displayed on this row but bellow the screen. The options are simple buttons with images of the type of hand on them.-->
+                <div class="buttons">
+                    <div class="button" id="rock"><img src="Images/Rock.png" style="width:80px"></div>
+                    <div class="button" id="paper"><img src="Images/Paper.png" style="width:80px"></div>
+                    <div class="button" id="scissors"><img src="Images/Scissors.png" style="width:80px"></div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- Importing our javascript script.-->
+    <script src="RPS.js"></script>
+</body>
+</html>

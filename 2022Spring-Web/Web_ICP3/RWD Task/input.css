@@ -1,0 +1,52 @@
+/* This is styling css file for our website.*/
+/* First up we import in a font style that will be used on all the text. It was imported from google fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+.details {
+    font-family: 'Rambla', sans-serif;
+    color: #747704;
+    text-align: right;
+}
+
+.code {
+    height: 460px;
+    object-position: 10% 4%; 
+    object-fit: cover;
+}
+
+.Appify {
+    height: 240px;
+    object-fit: cover;
+}
+
+.Sunflower {
+    height: 240px;
+    object-fit: cover;
+}
+
+.Bokeh {
+    height: 240px;
+    object-fit: cover;
+}
+
+#header {
+    border-bottom-style: solid;
+    border-width: thick;
+    color: #BCBBBB;
+}
+
+h2 {
+    color: #BCBBBB;
+}
+
+h3 {
+    color: #747704;
+}
+
+p{
+    text-align: center;
+}
+
+a {
+    color: #747704;
+}

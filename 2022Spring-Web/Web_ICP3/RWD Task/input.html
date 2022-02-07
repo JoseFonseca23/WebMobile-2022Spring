@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="input.css">
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+</head>
+
+<!-- This website is mock up of one given to us, and it uses bootstrap 4 to achive RWD.-->
+<!-- Once our container is created that will hold all of out website, several rows are placed within.-->
+<body>
+    <div class="container">
+        <!-- This first row has a unique id called header which will be used in the css file to add a border.-->
+        <div class="row" id="header">
+            <!-- This first column has a span of 1 and only holds our Mr. Bean image.-->
+            <div class="col-md-1 float-left">
+                <div><img class="img-fluid " alt="Bean" src="SampleImages/bean.jpg" ></div>
+            </div>
+            <!-- This is a padding column that has a span of 7.-->
+            <div class="col-md-7"></div>
+            <!-- This last column on our header has a span of 4 and has my name and occupation.-->
+            <div class="col-md-4 details">
+                <h1>Jose Fonseca</h1>
+                <h3>Front-end Developer</h3>
+            </div>
+        </div>
+        
+        <!-- This next row just holds our image of a segment of code.-->
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <img class="img-fluid w-100 code"  alt="code" src="SampleImages/Image.png">
+            </div>
+        </div>
+
+        <!-- This row just hold our Featured Work header. -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+        </div>
+
+        <!-- This last row is split in 3 colums of 4 each. Each colum has an image followed underneath it by a header, as well by a link.-->
+        <!-- Each image has unique identifier in its class so that we can work on them on our css file.-->
+        <div class="row align-items-end">
+            <div class="col-md-4">
+                <img class="img-fluid Appify" alt="APPIFY" src="SampleImages/app1.png" >
+                <h3 class="text-center">APPIFY</h3>
+                <p><a href="https://github.com/kvxc5/Appify/">https://github.com/kvxc5/Appify/</a></p>
+            </div>   
+            <div class="col-md-4">
+                <img class="img-fluid Sunflower" alt="SUNFLOWER" src="SampleImages/app2.png" >
+                <h3 class="text-center">SUNFLOWER</h3>
+                <p><a href="https://github.com/kvxc5/Sunflower/">https://github.com/kvxc5/Sunflower/</a></p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid Bokeh" alt="BOKEH" src="SampleImages/app3.png">
+                <h3 class="text-center">BOKEH</h3>
+                <p><a href="https://github.com/kvxc5/Bokeh/">https://github.com/kvxc5/Bokeh/</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
