@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="email_provider">
+        <item>"@gmail.com"</item>
+        <item>"@outlook.com"</item>
+        <item>"@umsystem.edu"</item>
+        <item>"@yahoo.com"</item>
+    </string-array>
+</resources>

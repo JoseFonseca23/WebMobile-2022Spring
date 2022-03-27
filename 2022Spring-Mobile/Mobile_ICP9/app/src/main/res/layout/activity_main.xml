@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="285dp"
+        tools:context="com.example.vijaya.icp9.MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:text="Cheese" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/normal_cheese_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/normal_cheese" />
+
+            <RadioButton
+                android:id="@+id/extra_cheese_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_cheese" />
+
+            <RadioButton
+                android:id="@+id/no_cheese_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_cheese" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/pepperoni_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="24dp"
+            android:text="@string/pepperoni"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/ham_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="24dp"
+            android:text="@string/ham"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/sausage_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="24dp"
+            android:text="@string/sausage"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/pineapple_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="24dp"
+            android:text="@string/pineapple"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/mushroom_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="24dp"
+            android:text="@string/mushroom"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginBottom="16sp"
+            android:background="?attr/colorControlHighlight"
+            android:hint="Name on Order"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="increment"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="@string/initial_quantity_value"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="192dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="16sp"
+                android:background="?attr/colorControlHighlight"
+                android:hint="email"
+                android:inputType="textCapWords" />
+
+            <Spinner
+                android:id="@+id/email_provider"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:entries="@array/email_provider"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="sendEmail"
+                android:text="ORDER" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="submitOrder"
+                android:text="SUMMARY" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

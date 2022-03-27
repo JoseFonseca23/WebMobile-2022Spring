@@ -1,0 +1,35 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">My Pizza Order</string>
+    <string name="name">Name</string>
+    <string name="normal_cheese">Normal cheese</string>
+    <string name="extra_cheese">Extra cheese</string>
+    <string name="no_cheese">No cheese</string>
+    <string name="toppings">Toppings</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="sausage">Sausage</string>
+    <string name="ham">Ham</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="quantity">Quantity</string>
+    <string name="initial_quantity_value">1</string>
+    <string name="order">Order</string>
+    <string name="order_summary_name">Name:<xliff:g example="Fonseca" id="name">%s</xliff:g></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="order_summary_pepperoni">Pepperoni added</string>
+    <string name="order_summary_extra_cheese">Extra cheese added</string>
+    <string name="order_summary_no_cheese">No cheese</string>
+    <string name="order_summary_sausage">Sausage added</string>
+    <string name="order_summary_ham">Ham added</string>
+    <string name="order_summary_pineapple">Pineapple added</string>
+    <string name="order_summary_mushroom">Mushroom added</string>
+
+    <string name="order_summary_quantity">Quantity: <xliff:g example="1" id="quantity">%d</xliff:g></string>
+    <string name="order_summary_total_price">Total: $ <xliff:g example="10" id="price">%.2f</xliff:g></string>
+    <string name="thank_you">Thank you!</string>
+    <string name="too_much_pizza">Please select less than one hundred pizzas</string>
+    <string name="too_little_pizza">Please select at least one pizza</string>
+    <string name="no_order_name">Please enter a name for this order</string>
+    <string name="no_email">Please enter an email address</string>
+</resources>
